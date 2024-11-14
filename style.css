@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght,ROND@100..900,100&display=swap');
+:root {
+    --plyr-font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+  margin: 0;
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0;
+  /*padding: 2rem;*/
+  text-align: left;
+  font-size: 1em;
+}
+
+.box {
+  padding: 2em;
+}
+
+#info {
+  width: 40%;
+  font-size: 100%;
+}
+
+#reel {
+  width: 60%;
+}
+
+#player {
+  width: 100%;
+}
+
+h1, h2, .nav-item, p {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 100;
+  margin: 0;
+  line-height: 1em;
+}
+
+p {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-weight: 300;
+  padding-top: .5em;
+}
+
+#title {
+  color: rgb(201, 121, 121);
+  margin-bottom: 1em;
+}
+
+.nav-item {
+  margin: .2em 0 .2em 0;
+  font-size: 1em;
+  font-weight: 700;
+  background: black;
+  color: rgb(201, 121, 121);
+  border-color: rgb(201, 121, 121) !important;
+  padding: .2em;
+  border-width: .05rem;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  background: white;
+  color: black;
+  font-weight: 900;
+}
+
+.content {
+  overflow: hidden;
+  height: 0;
+}
+
+.active {
+  height: auto !important;
+}
+
+#bottom {
+  color:rgba(255, 255, 255, 0.28);
+  font-size: .7em;
+  margin-top: 6em;
+}
+
+@media only screen and (max-width: 810px) {
+  .flex-container {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .box {
+    width: 100% !important;
+  }
+
+  #info {
+    font-size: 6vw !important;
+    padding-bottom: 1em;
+  }
+
+  .nav-item {
+    font-size: .7em;
+    border-width: .5px;
+  }
+
+  .box {
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+}
+
+a[href^="tel"], a {
+  color: inherit; /* Inherit text color of parent element. */
+}
+
+.content img {
+  width: 70%;
+}
