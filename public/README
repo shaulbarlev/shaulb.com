@@ -1,0 +1,6 @@
+Put static assets here so they are copied to dist/ on build:
+  me.jpg
+  poster.jpg
+  favicon.ico
+  vids/reel.mp4
+  vids/reel.webm
